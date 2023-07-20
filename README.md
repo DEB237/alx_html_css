@@ -1,5 +1,3 @@
-It looks like you're working on a homepage for a website called "Techium." The code you provided includes the HTML structure for the header, main content, and sections such as the hero section, services section, and works section. Here's a breakdown of the code:
-
 1. Header:
    - The header section contains a logo and a navigation menu.
    - The logo is represented by an <img> element with a link to the homepage.
