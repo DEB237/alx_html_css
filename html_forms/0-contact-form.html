@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <style>
+      ul, li {
+        list-style: none; /* Remove bullet points */
+        margin-bottom: 10px; /* Add spacing between elements */
+      }
+    </style>
+    <form>
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </li>
+    
+        <li>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </li>
+    
+        <li>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </li>
+      </ul>
+    
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

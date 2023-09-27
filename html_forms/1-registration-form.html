@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form onsubmit="validateForm(event)">
+        <form action="/register" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required placeholder="Enter your name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email address">
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required placeholder="Enter your password">
+                </li>
+                <li>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required placeholder="Confirm your password">
+                </li>
+                <li>
+                <input type="submit" value="Register">
+                </li>    
+            </ul>
+        </form>
+        <style>
+            form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+        </style>
+        <script>
+            function validateForm(event) {
+              event.preventDefault();
+          
+              var password = document.getElementById("password").value;
+              var confirmPassword = document.getElementById("confirm-password").value;
+          
+              if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return;
+              }
+            }
+        </script> 
+  </body>
+</html>

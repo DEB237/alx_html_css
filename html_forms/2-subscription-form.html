@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <style>
+        ul {
+          list-style: none; /* Remove bullet points */
+        }
+      
+        ul li {
+          margin-bottom: 10px; /* Add some spacing between elements */
+        }
+      </style>
+      
+      <form>
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </li>
+      
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </li>
+      
+          <li>
+            <label>Subscription Preference:</label>
+            <div>
+              <input type="radio" id="monthly" name="subscription" value="monthly" required>
+              <label for="monthly">Monthly</label>
+            </div>
+            <div>
+              <input type="radio" id="yearly" name="subscription" value="yearly" required>
+              <label for="yearly">Yearly</label>
+            </div>
+          </li>
+        </ul>
+      
+        <input type="submit" value="Subscribe">
+      </form>
+  </body>
+</html>
