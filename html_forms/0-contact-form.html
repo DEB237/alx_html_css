@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My test page</title>
-  </head>
-  <body>
-    <h1>Registration Form</h1>
-    <style>
-      ul, li {
-        list-style: none; /* Remove bullet points */
-        margin-bottom: 10px; /* Add spacing between elements */
-      }
-    </style>
-    <form>
-      <ul>
-        <li>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </li>
-    
-        <li>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </li>
-    
-        <li>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </li>
-      </ul>
-    
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Alx Html Form
+        </title>
+    </head>
+    <body>
+        <form>
+            <ul>
+                <li>
+                    <input type="text" placeholder="name" required />
+                </li>
+                <li>
+                    <input type="email" placeholder="email address" required/>
+                </li>
+                <li>
+                    <textarea cols="20" rows="5" wrap="soft">
+                    </textarea>
+                </li>
+                <button type="submit">Submit</button>
+            </ul>
+        </form>
+    </body>
 </html>
